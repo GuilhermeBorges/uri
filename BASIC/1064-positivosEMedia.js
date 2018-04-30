@@ -88,10 +88,14 @@ var lines =
 //   }, 0), -1)
 // }
 
-function average(array) {
+function average2(array) {
   return (array.reduce((c, a, i, v) => {
     return c + a / v.length 
   }, 0)).toFixed(1)
+}
+
+function average(array) {
+  return (array.reduce((c, a) => (c + a), 0) / array.length).toFixed(1)
 }
 
 let positivos = lines
