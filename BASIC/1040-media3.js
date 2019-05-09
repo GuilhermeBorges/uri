@@ -68,13 +68,13 @@ function formatEntry(entry) {
 var pesos = [2, 3, 4, 1]
 
 function sum(a, b) { return a + b }
-function sumPesos(a, b, index) { 
+function sumPesos(a, b, index) {
   return a + b * pesos[index]
 }
-function media(array) { 
+function media(array) {
   return (array.reduce(sumPesos, 0) / (pesos.reduce(sum,0))).toFixed(1)
 }
-function mediaFinal(vetorNotas, notaExameFinal) { 
+function mediaFinal(vetorNotas, notaExameFinal) {
   return ((Number(media(vetorNotas)) + notaExameFinal) / 2).toFixed(1)
 }
 
@@ -89,7 +89,7 @@ function avaliacao(notas, notaExameFinal) {
     else console.log('Aluno reprovado.')
     console.log(`Media final: ${mediaFinal(notas, notaExameFinal)}`)
   }
-    
+
 }
 
 entrada = formatEntry(lines)

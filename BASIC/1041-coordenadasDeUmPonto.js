@@ -34,12 +34,11 @@ Origem
 `
 
 
-var input = require('fs').readFileSync('/dev/stdin', 'utf8');
-var lines = input.split('\n');
+// var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+// var lines = input.split('\n');
 
-// var lines = 
-// `4.5 -2.2
-// `.split('\n')
+var lines = `4.5 -2.2
+`.split('\n')
 
 /**
  * Escreva a sua solução aqui
