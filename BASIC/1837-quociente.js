@@ -36,5 +36,12 @@ Exemplos de Entrada	Exemplos de Saída
 4º Maratona UFFS
 */
 
-const lines = `7 3`.split('\n')
-const [a, b] = lines.split(' ').map(Number)
+const lines = `230 674`.split('\n')
+// const [a, b] = lines[0].split(' ').map(Number)
+// console.log(`${~~(a / b)} ${a % b}`)
+const [a, b] = lines[0].split(' ').map(Number)
+
+for (let r = 0; r < Math.abs(b); r++) {
+  if ((a - r) / b === ~~((a - r) / b))
+    console.log(`${~~((a - r) / b)} ${r}`)
+}
